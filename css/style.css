@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+h1, h2, h3, h4 {
+  font-family: Raleway, sans-serif;
+}
+
+.total {
+  background-color: #CCCCCC;
+  height: 100vh;
+}
+
+.accueil {
+  text-align: center;
+}
+
+.image-accueil {
+  text-align: center;
+  max-width: 30vw;
+}
