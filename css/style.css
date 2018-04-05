@@ -38,3 +38,7 @@ p {
 .bouton {
   text-align: center;
 }
+
+.card-img-top {
+  max-height: 20em;
+}

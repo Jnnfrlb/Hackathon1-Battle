@@ -1,29 +1,7 @@
 <?php
 
-//$json=file_​get​_c​ontents("https://akabab.github.io/superhero−api/api/id/1.json");
-//$tab=json_decode($json);
-//var_​dump($tab);
-
 //requete powerstats
-$request1 = "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/powerstats/1.json" ;
-$response1 = file_get_contents($request1);
-$jsonobj1 = json_decode($response1, true);
-
-var_dump($response1);
-echo "<br>";
-echo $response1[1];
-
-
-//requete 2
-/*$request = "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/1.json" ;
-$response = file_get_contents($request);
-$jsonobj = json_decode($response);
-
-var_dump($response);
-echo "<br>";
-
-echo $response[2];*/
-
+include 'appelPerso.php';
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +31,7 @@ echo $response[2];*/
       <br>
       <div class="accueil">
         <h1>
-          <span class="glitch" data-text="ChOose your fighteR">
+          <span class="glitch" data-text="ChOose your fighteR ?">
             Choose your fighter !
           </span>
         </h1>
@@ -62,12 +40,15 @@ echo $response[2];*/
       <br><br>
 
       <div class="container">
+
+<!-- 1e colonne -->
         <div class="row accueil">
 
+<!-- Chuck Norris -->
           <div class="card" style="width: 25%;">
-            <img class="card-img-top" src="" alt="Card image cap">
+            <img src="<?php echo $tabChuck['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title"><?php echo 'Test' ?></h5>
+              <h5 class="card-title"><?php echo "<h5>".$tabChuck['name']."</h5>"; ?></h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
@@ -75,10 +56,11 @@ echo $response[2];*/
             </div>
           </div>
 
+<!-- Darth Maul -->
           <div class="card" style="width: 25%;">
-            <img class="card-img-top" src="" alt="Card image cap">
+            <img src="<?php echo $tabMaul['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title"><?php echo 'Test' ?></h5>
+              <h5 class="card-title"><?php echo "<h5>".$tabMaul['name']."</h5>"; ?></h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
@@ -86,10 +68,11 @@ echo $response[2];*/
             </div>
           </div>
 
+<!-- Wolverine -->
           <div class="card" style="width: 25%;">
-            <img class="card-img-top" src="" alt="Card image cap">
+            <img src="<?php echo $tabWolverine['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title"><?php echo 'Test' ?></h5>
+              <h5 class="card-title"><?php echo "<h5>".$tabWolverine['name']."</h5>"; ?></h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
@@ -97,18 +80,123 @@ echo $response[2];*/
             </div>
           </div>
 
+<!-- Jar Jar -->
           <div class="card" style="width: 25%;">
-            <img class="card-img-top" src="" alt="Card image cap">
+            <img src="<?php echo $tabJarjar['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title"><?php echo 'Test' ?></h5>
+              <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5>"; ?></h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
             </div>
           </div>
-
         </div>
+
+<!-- 2e colonne -->
+        <div class="row accueil">
+
+<!-- Mystique -->
+          <div class="card" style="width: 25%;">
+            <img src="<?php echo $tabMystique['images']['sm']?>"  alt="photo heros" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo "<h5>".$tabMystique['name']."</h5>"; ?></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="bouton">
+                <a href="#" class="btn btn-primary">Choose</a>
+              </div>
+            </div>
+          </div>
+
+<!-- Poison Ivy -->
+          <div class="card" style="width: 25%;">
+            <img src="<?php echo $tabPoisonIvy['images']['sm']?>"  alt="photo heros" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo "<h5>".$tabPoisonIvy['name']."</h5>"; ?></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="bouton">
+                <a href="#" class="btn btn-primary">Choose</a>
+              </div>
+            </div>
+          </div>
+
+<!-- Sauron -->
+          <div class="card" style="width: 25%;">
+            <img src="<?php echo $tabSauron['images']['sm']?>"  alt="photo heros" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo "<h5>".$tabSauron['name']."</h5>"; ?></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="bouton">
+                <a href="#" class="btn btn-primary">Choose</a>
+              </div>
+            </div>
+          </div>
+
+<!-- Stormtrooper -->
+          <div class="card" style="width: 25%;">
+            <img src="<?php echo $tabStormtrooper['images']['sm']?>"  alt="photo heros" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo "<h5>".$tabStormtrooper['name']."</h5>"; ?></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="bouton">
+                <a href="#" class="btn btn-primary">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- 3e colonne -->
+    <div class="row accueil">
+
+<!-- Yoda -->
+                  <div class="card" style="width: 25%;">
+                    <img src="<?php echo $tabYoda['images']['sm']?>"  alt="photo heros" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><?php echo "<h5>".$tabYoda['name']."</h5>"; ?></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="bouton">
+                        <a href="#" class="btn btn-primary">Choose</a>
+                      </div>
+                    </div>
+                  </div>
+
+        <!-- Wonder Woman -->
+                  <div class="card" style="width: 25%;">
+                    <img src="<?php echo $tabWonderWoman['images']['sm']?>"  alt="photo heros" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><?php echo "<h5>".$tabWonderWoman['name']."</h5>"; ?></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="bouton">
+                        <a href="#" class="btn btn-primary">Choose</a>
+                      </div>
+                    </div>
+                  </div>
+
+        <!-- Thor -->
+                  <div class="card" style="width: 25%;">
+                    <img src="<?php echo $tabThor['images']['sm']?>"  alt="photo heros" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><?php echo "<h5>".$tabThor['name']."</h5>"; ?></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="bouton">
+                        <a href="#" class="btn btn-primary">Choose</a>
+                      </div>
+                    </div>
+                  </div>
+
+        <!-- Vegeta -->
+                  <div class="card" style="width: 25%;">
+                    <img src="<?php echo $tabVegeta['images']['sm']?>"  alt="photo heros" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="bouton">
+                        <a href="#" class="btn btn-primary">Choose</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
       </div>
     </div>
 
