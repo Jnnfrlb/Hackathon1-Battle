@@ -3,6 +3,10 @@
 //Chuck Norris
 $jsonChuck = file_get_contents("https://akabab.github.io/superhero-api/api/id/176.json");
 $tabChuck=json_decode($jsonChuck,true);
+//echo "<h3>".$tabChuck['name']."</h3>";
+//$test = foreach ($tabChuck['powerstats'] as $key => $value) {
+    //echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+//};
 
 //Darth Maul
 $jsonMaul = file_get_contents("https://akabab.github.io/superhero-api/api/id/207.json");

@@ -49,10 +49,19 @@ include 'appelPerso.php';
             <img src="<?php echo $tabChuck['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabChuck['name']."</h5>"; ?></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php foreach ($tabChuck['powerstats'] as $key => $value) {
+                  echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+              };?></p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
+              <!-- essai -->
+              <div class="cube">
+                <div class="cube-titre">
+                  Projet numéro : 1
+                </div>
+              </div>
+              
             </div>
           </div>
 
@@ -61,7 +70,9 @@ include 'appelPerso.php';
             <img src="<?php echo $tabMaul['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabMaul['name']."</h5>"; ?></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php foreach ($tabMaul['powerstats'] as $key => $value) {
+                  echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+              };?></p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
@@ -73,7 +84,9 @@ include 'appelPerso.php';
             <img src="<?php echo $tabWolverine['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabWolverine['name']."</h5>"; ?></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php foreach ($tabWolverine['powerstats'] as $key => $value) {
+                  echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+              };?></p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
@@ -85,7 +98,9 @@ include 'appelPerso.php';
             <img src="<?php echo $tabJarjar['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5>"; ?></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php foreach ($tabJarjar['powerstats'] as $key => $value) {
+                  echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+              };?></p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
@@ -101,7 +116,9 @@ include 'appelPerso.php';
             <img src="<?php echo $tabMystique['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabMystique['name']."</h5>"; ?></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php foreach ($tabMystique['powerstats'] as $key => $value) {
+                  echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+              };?></p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
@@ -113,7 +130,9 @@ include 'appelPerso.php';
             <img src="<?php echo $tabPoisonIvy['images']['sm']?>"  alt="photo heros" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabPoisonIvy['name']."</h5>"; ?></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php foreach ($tabPoisonIvy['powerstats'] as $key => $value) {
+                  echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+              };?></p>
               <div class="bouton">
                 <a href="#" class="btn btn-primary">Choose</a>
               </div>
