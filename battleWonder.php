@@ -21,7 +21,7 @@ include 'vieWonder.php';
    </head>
 
    <body>
-
+<audio src="Street Fighter V - ROUND 1 FIGHT.mp3" autoplay></audio>
      <div class="accueil"><a href="personnages.php">
        <img src="image/street-fighter.png" class="image-accueil" alt=""></a>
      </div>
