@@ -43,33 +43,32 @@ p {
   max-height: 18em;
 }
 
+.card-text:hover {
+  opacity: 1;
+}
+
 /*.card:hover {
   opacity: 0.5;
+}
+
+.card:hover, stats{
+  opacity: 0.2;
 }*/
 
-.cube {
-    margin: 52px;
-    position:relative;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #C8C8C8;
+.element{
+    opacity: 1;
 }
 
-.cube:hover .cube-titre{
-    opacity:1;
+.element:hover, reward{
+    opacity: 1;
+
 }
 
-.cube-titre {
-    opacity:0;
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    height: 30px;
-    background: #C8C8C8;
-    color: white;
-     -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-         -ms-transition: all 0.2s ease;
-          -o-transition: all 0.2s ease;
-             transition: all 0.2s ease;
+.reward{
+    opacity: 0;
+}
+
+.reward:hover{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
 }
