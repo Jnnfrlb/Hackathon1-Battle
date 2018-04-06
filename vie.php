@@ -11,17 +11,17 @@ $attack1=$tabJarjar['powerstats'][$perso1];
 $attack2 =$tabVegeta['powerstats'][$perso2];
 
 
-while ($life1 > 0 && $life2 > 0) {
-    $life1 -= $attack2;
-    $life2 -= $attack1;
-}if ($life1 <= 0) {
-    echo "Le vainqueur est ". $tabVegeta['name']. ", il lui reste " .$life2."pts de vie."."<br>" ;
-    echo "Il reste ". $life1 ." à " .$tabJarjar['name'];
+  while ($life1 > 0 && $life2 > 0) {
+      $life1 -= $attack2;
+      $life2 -= $attack1;
+  }if ($life1 <= 0) {
+      return "Le vainqueur est ". $tabVegeta['name']. ", il lui reste " .$life2."pts de vie."."<br>" ."Il reste ". $life1 ." à " .$tabJarjar['name'];
 
-}else{
-    echo "Le vainqueur est ". $tabJarjar['name']. ", il lui reste " . $life1."<br>" ;
-    echo "Il reste ". $life2 ." à " .$tabVegeta['name'];
-}
+  }else{
+      return "Le vainqueur est ". $tabJarjar['name']. ", il lui reste " . $life1."<br>" . "Il reste ". $life2 ." à " .$tabVegeta['name'];
+  }
+
+
 
 
  ?>

@@ -48,7 +48,7 @@ include 'vie.php';
                    </div>
                </div>
            <div class="card-body">
-             <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5><br/>"."<progress value=".$life1." max=\"100\"></progress><br>"; ?></h5>
+             <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5><br/>"."<progress value=".$life1." max=\"1000\"></progress><br>"; ?></h5>
            </div>
          </div>
 
@@ -69,8 +69,29 @@ include 'vie.php';
            </div>
          </div>
 
-
        </div>
+       <br><br>
+      <div class="accueil message">
+        <?php
+          while ($life1 > 0 && $life2 > 0) {
+              $life1 -= $attack2;
+              $life2 -= $attack1;
+          }if ($life1 <= 0) {
+              echo "Le vainqueur est ". $tabVegeta['name']. ", il lui reste " .$life2."pts de vie."."<br>" . $tabJarjar['name'] ." est mouru !";
+
+          }else{
+              echo "Le vainqueur est ". $tabJarjar['name']. ", il lui reste " . $life1."<br>" . "Il reste ". $tabVegeta['name'] ." est mouru !";
+          }
+         ?>
+      </div>
+      <br><br>
+       <div class="bouton">
+         <a href="battle.php" class="btn btn-primary btn-primary2">Restart !</a>
+       </div>
+       <br><br>
+
+
+
      </div>
 
 

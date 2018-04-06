@@ -35,6 +35,14 @@ p {
   display: inline-block;
 }
 
+.btn-primary2{
+  background-color: #F89401;
+  border-color: #F89401;
+  display: inline-block;
+  height: 3em;
+  vertical-align: middle;
+}
+
 .btn-primary:hover {
   background-color: #F89401;
   border-color: #F89401;
@@ -88,7 +96,12 @@ col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, 
   padding-left: 0px;
 }
 
-vs {
+.vs {
   margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+.message {
+  font-size: 1.8em;
+  color: green;
 }
