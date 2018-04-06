@@ -1,5 +1,6 @@
 <?php
 include 'appelPerso.php';
+include 'vie.php';
  ?>
 
  <!DOCTYPE html>
@@ -39,15 +40,15 @@ include 'appelPerso.php';
        <div class="row accueil">
 
          <div class="card col-3 offset-2">
-           <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+           <div class="element" style="background-image: url('<?php echo $tabJarjar['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
                    <div class="reward">
-                     <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
+                     <p class="card-text reward"><?php foreach ($tabJarjar['powerstats'] as $key => $value) {
                          echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
                      };?></p>
                    </div>
                </div>
            <div class="card-body">
-             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
+             <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5><br/>"."<progress value=".$life1." max=\"100\"></progress><br>"; ?></h5>
            </div>
          </div>
 
@@ -59,18 +60,17 @@ include 'appelPerso.php';
            <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
                    <div class="reward">
                      <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
-                         echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+                         echo $key .":"."<br>"."<progress value=".$value." max=\"1000\"></progress><br>";
                      };?></p>
                    </div>
                </div>
            <div class="card-body">
-             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
+             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5><br/>"."<progress value=".$life2." max=\"1000\"></progress><br>"; ?></h5>
            </div>
          </div>
 
 
        </div>
-
      </div>
 
 

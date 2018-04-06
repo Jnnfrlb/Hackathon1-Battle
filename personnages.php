@@ -56,7 +56,7 @@ include 'appelPerso.php';
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabChuck['name']."</h5>"; ?></h5>
               <div class="bouton">
-                <a href="#" class="btn btn-primary">Choose</a>
+                <input type="checkbox">
               </div>
             </div>
           </div>
