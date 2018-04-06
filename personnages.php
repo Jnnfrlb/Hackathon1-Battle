@@ -25,7 +25,7 @@ include 'appelPerso.php';
     <div class="total">
 
       <div class="accueil">
-        <img src="image/street-fighter.png" class="image-accueil" alt="">
+        <img src="image/street-fighter.png" class="image-accueil2" alt="">
       </div>
 
       <br>
