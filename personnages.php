@@ -90,7 +90,7 @@ include 'appelPerso.php';
           <div class="card-body">
             <h5 class="card-title"><?php echo "<h5>".$tabWolverine['name']."</h5>"; ?></h5>
             <div class="bouton">
-              <a href="#" class="btn btn-primary">Choose</a>
+              <a href="battleWolverine.php" class="btn btn-primary">Choose</a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ include 'appelPerso.php';
                   <div class="card-body">
                     <h5 class="card-title"><?php echo "<h5>".$tabMystique['name']."</h5>"; ?></h5>
                     <div class="bouton">
-                      <a href="#" class="btn btn-primary">Choose</a>
+                      <a href="battleMystique.php" class="btn btn-primary">Choose</a>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ include 'appelPerso.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo "<h5>".$tabStormtrooper['name']."</h5>"; ?></h5>
                   <div class="bouton">
-                    <a href="#" class="btn btn-primary">Choose</a>
+                    <a href="battleStormtrooper.php" class="btn btn-primary">Choose</a>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ include 'appelPerso.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo "<h5>".$tabPoisonIvy['name']."</h5>"; ?></h5>
                   <div class="bouton">
-                    <a href="#" class="btn btn-primary">Choose</a>
+                    <a href="battlePoisonIvy.php" class="btn btn-primary">Choose</a>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ include 'appelPerso.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo "<h5>".$tabSauron['name']."</h5>"; ?></h5>
                   <div class="bouton">
-                    <a href="#" class="btn btn-primary">Choose</a>
+                    <a href="battleSauron.php" class="btn btn-primary">Choose</a>
                   </div>
                 </div>
               </div>
@@ -200,7 +200,7 @@ include 'appelPerso.php';
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabYoda['name']."</h5>"; ?></h5>
               <div class="bouton">
-                <a href="#" class="btn btn-primary">Choose</a>
+                <a href="battleYoda.php" class="btn btn-primary">Choose</a>
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@ include 'appelPerso.php';
           <div class="card-body">
             <h5 class="card-title"><?php echo "<h5>".$tabWonderWoman['name']."</h5>"; ?></h5>
             <div class="bouton">
-              <a href="#" class="btn btn-primary">Choose</a>
+              <a href="battleWonder.php" class="btn btn-primary">Choose</a>
             </div>
           </div>
         </div>
