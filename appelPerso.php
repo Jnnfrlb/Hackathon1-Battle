@@ -52,4 +52,22 @@ $tabThor=json_decode($jsonThor,true);
 $jsonVegeta = file_get_contents("https://akabab.github.io/superhero-api/api/id/686.json");
 $tabVegeta=json_decode($jsonVegeta,true);
 
+//tableau heros avec les 12 personnages
+$tabHeros = array();
+$tabHeros[0] = array($tabChuck);
+$tabHeros[1] = array($tabMaul);
+$tabHeros[2] = array($tabWolverine);
+$tabHeros[3] = array($tabJarjar);
+$tabHeros[4] = array($tabMystique);
+$tabHeros[5] = array($tabPoisonIvy);
+$tabHeros[6] = array($tabSauron);
+$tabHeros[7] = array($tabStormtrooper);
+$tabHeros[8] = array($tabYoda);
+$tabHeros[9] = array($tabWonderWoman);
+$tabHeros[10] = array($tabThor);
+$tabHeros[11] = array($tabVegeta);
+//var_dump($tabHeros);
+
+
+
  ?>
