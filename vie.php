@@ -20,7 +20,7 @@ $attack2 =$tabVegeta['powerstats'][$perso2];
   }else{
       return "Le vainqueur est ". $tabJarjar['name']. ", il lui reste " . $life1."<br>" . "Il reste ". $life2 ." à " .$tabVegeta['name'];
   }
-
+}
 
 
 
