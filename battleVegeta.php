@@ -21,12 +21,12 @@ include 'vieVegeta.php';
    </head>
 
    <body>
-
+    <audio src="Street Fighter V - ROUND 1 FIGHT.mp3" autoplay></audio>
      <div class="accueil">
-       <img src="image/street-fighter.png" class="image-accueil" alt="">
+       <a href="battleVegeta.php"> <img src="image/street-fighter.png" class="image-accueil" alt=""></a>
      </div>
 
-     <div class="accueil">
+    <div class="accueil">
        <h1>
          <span class="glitch" data-text="Fight !">
            Fight !
