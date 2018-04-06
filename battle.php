@@ -1,5 +1,5 @@
 <?php
-
+include 'appelPerso.php';
  ?>
 
  <!DOCTYPE html>
@@ -15,17 +15,32 @@
 
      <!-- Custom styles for this template -->
      <link href="css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+       <link rel="stylesheet" href="css/font-css.css">
    </head>
 
    <body>
 
+     <div class="accueil">
+       <h1>
+         <span class="glitch" data-text="Fight ?">
+           Fight !
+         </span>
+       </h1>
+     </div>
+
      <div class="row accueil">
 
        <div class="card" style="width: 25%;">
-         <img class="card-img-top" src="" alt="Card image cap">
+         <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+                 <div class="reward">
+                   <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
+                       echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+                   };?></p>
+                 </div>
+             </div>
          <div class="card-body">
-           <h5 class="card-title"><?php echo 'Test' ?></h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
            <div class="bouton">
              <a href="#" class="btn btn-primary">Choose</a>
            </div>
@@ -33,15 +48,21 @@
        </div>
 
        <div class="card" style="width: 25%;">
-         <img class="card-img-top" src="" alt="Card image cap">
+         <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+                 <div class="reward">
+                   <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
+                       echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+                   };?></p>
+                 </div>
+             </div>
          <div class="card-body">
-           <h5 class="card-title"><?php echo 'Test' ?></h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
            <div class="bouton">
              <a href="#" class="btn btn-primary">Choose</a>
            </div>
          </div>
        </div>
+
 
      </div>
 
