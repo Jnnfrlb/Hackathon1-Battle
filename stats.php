@@ -1,5 +1,27 @@
 <?php
 include 'appelPerso.php';
+require 'Fonctions.php';
+
+$json = file_get_contents("https://akabab.github.io/superhero-api/api/id/127.json");
+$tab=json_decode($json);
+
+echo "<br>";
+echo "<br>";
+var_dump($tab);
+echo $tab->name;
+echo $tab->powerstats->intelligence;
+
+echo "<br>";
+echo "<br>";
+
+$aze = new hero();
+
+var_dump($aze);
+
+
+
+
+
 /*
 Chuck Norris = $tabHeros[0][0]['name'];
 Dark Maul = $tabHeros[1][0]['name'];
@@ -15,20 +37,6 @@ Thor = $tabHeros[10][0]['name'];
 Vegeta = $tabHeros[11][0]['name'];
 
 */
-foreach ($tabHeros as $key => $value) {
-    if (is_array($value)) {
-        foreach ($value as $key => $retour) {
-            echo $retour;
-        }
-    }
-    
-}
-
-
-
-
-
-
 
 
 
@@ -86,6 +94,6 @@ while ($life1 > 0 && $life2 > 0) {
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+                 
+</body> 
 </html>
