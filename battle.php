@@ -22,49 +22,57 @@ include 'appelPerso.php';
    <body>
 
      <div class="accueil">
+       <img src="image/street-fighter.png" class="image-accueil" alt="">
+     </div>
+
+     <div class="accueil">
        <h1>
-         <span class="glitch" data-text="Fight ?">
+         <span class="glitch" data-text="Fight !">
            Fight !
          </span>
        </h1>
      </div>
+     <br><br>
 
-     <div class="row accueil">
+     <div class="container">
 
-       <div class="card" style="width: 25%;">
-         <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
-                 <div class="reward">
-                   <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
-                       echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
-                   };?></p>
-                 </div>
-             </div>
-         <div class="card-body">
-           <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
-           <div class="bouton">
-             <a href="#" class="btn btn-primary">Choose</a>
+       <div class="row accueil">
+
+         <div class="card col-3 offset-2">
+           <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+                   <div class="reward">
+                     <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
+                         echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+                     };?></p>
+                   </div>
+               </div>
+           <div class="card-body">
+             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
            </div>
          </div>
-       </div>
 
-       <div class="card" style="width: 25%;">
-         <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
-                 <div class="reward">
-                   <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
-                       echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
-                   };?></p>
-                 </div>
-             </div>
-         <div class="card-body">
-           <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
-           <div class="bouton">
-             <a href="#" class="btn btn-primary">Choose</a>
+         <div class="col-2 vs">
+           <h1>VS</h1>
+         </div>
+
+         <div class="card col-3">
+           <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+                   <div class="reward">
+                     <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
+                         echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
+                     };?></p>
+                   </div>
+               </div>
+           <div class="card-body">
+             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
            </div>
          </div>
-       </div>
 
+
+       </div>
 
      </div>
+
 
    </body>
 
