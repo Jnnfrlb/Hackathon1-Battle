@@ -1,6 +1,6 @@
 <?php
 include 'appelPerso.php';
-include 'vie.php';
+include 'vieChuck.php';
  ?>
 
  <!DOCTYPE html>
@@ -22,8 +22,8 @@ include 'vie.php';
 
    <body>
 
-     <div class="accueil">
-       <img src="image/street-fighter.png" class="image-accueil" alt="">
+     <div class="accueil"><a href="personnages.php">
+       <img src="image/street-fighter.png" class="image-accueil" alt=""></a>
      </div>
 
      <div class="accueil">
@@ -40,15 +40,15 @@ include 'vie.php';
        <div class="row accueil">
 
          <div class="card col-3 offset-2">
-           <div class="element" style="background-image: url('<?php echo $tabJarjar['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+           <div class="element" style="background-image: url('<?php echo $tabChuck['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
                    <div class="reward">
-                     <p class="card-text reward"><?php foreach ($tabJarjar['powerstats'] as $key => $value) {
+                     <p class="card-text reward"><?php foreach ($tabChuck['powerstats'] as $key => $value) {
                          echo $key .":"."<br>"."<progress value=".$value." max=\"100\"></progress><br>";
                      };?></p>
                    </div>
                </div>
            <div class="card-body">
-             <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5><br/>"."<progress value=".$life1." max=\"1000\"></progress><br>"; ?></h5>
+             <h5 class="card-title"><?php echo "<h5>".$tabChuck['name']."</h5><br/>"."<progress value=".$life1." max=\"1000\"></progress><br>"; ?></h5>
            </div>
          </div>
 
@@ -57,15 +57,15 @@ include 'vie.php';
          </div>
 
          <div class="card col-3">
-           <div class="element" style="background-image: url('<?php echo $tabVegeta['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
+           <div class="element" style="background-image: url('<?php echo $tabStormtrooper['images']['sm']?>'); background-size: 100% 25vw ; background-repeat: no-repeat">
                    <div class="reward">
-                     <p class="card-text reward"><?php foreach ($tabVegeta['powerstats'] as $key => $value) {
+                     <p class="card-text reward"><?php foreach ($tabStormtrooper['powerstats'] as $key => $value) {
                          echo $key .":"."<br>"."<progress value=".$value." max=\"1000\"></progress><br>";
                      };?></p>
                    </div>
                </div>
            <div class="card-body">
-             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5><br/>"."<progress value=".$life2." max=\"1000\"></progress><br>"; ?></h5>
+             <h5 class="card-title"><?php echo "<h5>".$tabStormtrooper['name']."</h5><br/>"."<progress value=".$life2." max=\"1000\"></progress><br>"; ?></h5>
            </div>
          </div>
 
@@ -77,16 +77,16 @@ include 'vie.php';
               $life1 -= $attack2;
               $life2 -= $attack1;
           }if ($life1 <= 0) {
-              echo "Le vainqueur est ". $tabVegeta['name']. ", il lui reste " .$life2."pts de vie."."<br>" . $tabJarjar['name'] ." est mouru !";
+              echo "Le vainqueur est ". $tabStormtrooper['name']. ", il lui reste " .$life2."pts de vie."."<br>" . $tabChuck['name'] ." est mouru !";
 
           }else{
-              echo "Le vainqueur est ". $tabJarjar['name']. ", il lui reste " . $life1."<br>" . "Il reste ". $tabVegeta['name'] ." est mouru !";
+              echo "Le vainqueur est ". $tabChuck['name']. ", il lui reste " . $life1." pts.<br>" .$tabStormtrooper['name'] ." est mouru !";
           }
          ?>
       </div>
       <br><br>
        <div class="bouton">
-         <a href="battle.php" class="btn btn-primary btn-primary2">Restart !</a>
+         <a href="battleChuck.php" class="btn btn-primary btn-primary2">Restart !</a>
        </div>
        <br><br>
 

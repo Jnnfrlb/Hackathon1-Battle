@@ -56,7 +56,7 @@ include 'appelPerso.php';
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabChuck['name']."</h5>"; ?></h5>
               <div class="bouton">
-                <input type="checkbox">
+                <a href="battleChuck.php" class="btn btn-primary">Choose</a>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ include 'appelPerso.php';
           <div class="card-body">
             <h5 class="card-title"><?php echo "<h5>".$tabMaul['name']."</h5>"; ?></h5>
             <div class="bouton">
-              <a href="#" class="btn btn-primary">Choose</a>
+              <a href="battleMaul.php" class="btn btn-primary">Choose</a>
             </div>
           </div>
         </div>
