@@ -162,7 +162,7 @@ include 'appelPerso.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo "<h5>".$tabPoisonIvy['name']."</h5>"; ?></h5>
                   <div class="bouton">
-                    <a href="#" class="btn btn-primary">Choose</a>
+                    <a href="battlePoisonIvy.php" class="btn btn-primary">Choose</a>
                   </div>
                 </div>
               </div>
@@ -200,7 +200,7 @@ include 'appelPerso.php';
             <div class="card-body">
               <h5 class="card-title"><?php echo "<h5>".$tabYoda['name']."</h5>"; ?></h5>
               <div class="bouton">
-                <a href="#" class="btn btn-primary">Choose</a>
+                <a href="battleYoda.php" class="btn btn-primary">Choose</a>
               </div>
             </div>
           </div>
