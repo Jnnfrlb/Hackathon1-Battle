@@ -145,7 +145,7 @@ include 'appelPerso.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo "<h5>".$tabStormtrooper['name']."</h5>"; ?></h5>
                   <div class="bouton">
-                    <a href="#" class="btn btn-primary">Choose</a>
+                    <a href="battleStormtrooper.php" class="btn btn-primary">Choose</a>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ include 'appelPerso.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo "<h5>".$tabSauron['name']."</h5>"; ?></h5>
                   <div class="bouton">
-                    <a href="#" class="btn btn-primary">Choose</a>
+                    <a href="battleSauron.php" class="btn btn-primary">Choose</a>
                   </div>
                 </div>
               </div>
@@ -217,7 +217,7 @@ include 'appelPerso.php';
           <div class="card-body">
             <h5 class="card-title"><?php echo "<h5>".$tabWonderWoman['name']."</h5>"; ?></h5>
             <div class="bouton">
-              <a href="#" class="btn btn-primary">Choose</a>
+              <a href="battleWonder.php" class="btn btn-primary">Choose</a>
             </div>
           </div>
         </div>
