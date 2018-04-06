@@ -107,7 +107,7 @@ include 'appelPerso.php';
           <div class="card-body">
             <h5 class="card-title"><?php echo "<h5>".$tabJarjar['name']."</h5>"; ?></h5>
             <div class="bouton">
-              <a href="#" class="btn btn-primary">Choose</a>
+              <a href="battleJarJar.php" class="btn btn-primary">Choose</a>
             </div>
           </div>
         </div>
@@ -251,7 +251,7 @@ include 'appelPerso.php';
           <div class="card-body">
             <h5 class="card-title"><?php echo "<h5>".$tabVegeta['name']."</h5>"; ?></h5>
             <div class="bouton">
-              <a href="#" class="btn btn-primary">Choose</a>
+              <a href="battleVegeta.php" class="btn btn-primary">Choose</a>
             </div>
           </div>
         </div>
